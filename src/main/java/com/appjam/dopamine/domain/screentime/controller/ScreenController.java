@@ -18,7 +18,7 @@ public class ScreenController {
     private final ScreenService screenService;
 
     @PostMapping("/avg")
-    @Operation(summary = "스크린 타임 평균", description = "운동 횟수를 저장합니다.")
+    @Operation(summary = "스크린 타임 평균", description = "스크린 타임 평균 값을 저장합니다.")
     public BaseResponse screenTimeAvg(
             Authentication authentication,
             @RequestBody ScreenDTO screenDTO){

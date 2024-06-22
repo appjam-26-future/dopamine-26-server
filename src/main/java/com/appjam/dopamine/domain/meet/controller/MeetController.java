@@ -18,7 +18,7 @@ public class MeetController {
     private final MeetService meetService;
 
     @PostMapping("/count")
-    @Operation(summary = "살함 만나는 횟수", description = "만남 횟수를 저장합니다.")
+    @Operation(summary = "사람 만나는 횟수", description = "만남 횟수를 저장합니다.")
     public BaseResponse meetCount(
             Authentication authentication,
             @RequestBody MeetDTO meetDTO){
