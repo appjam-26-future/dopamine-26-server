@@ -23,6 +23,4 @@ public class MeetServiceImpl implements MeetService {
         meetRepository.save(user);
         return new BaseResponse(HttpStatus.OK, "만남 횟수 저장 성공");
     }
-
-
 }

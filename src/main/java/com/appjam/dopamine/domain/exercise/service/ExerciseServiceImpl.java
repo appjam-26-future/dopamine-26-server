@@ -23,6 +23,4 @@ public class ExerciseServiceImpl implements ExerciseService {
         exerciseRepository.save(exercise);
         return new BaseResponse(HttpStatus.OK, "운동 횟수 저장 성공");
     }
-
-
 }

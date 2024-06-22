@@ -23,6 +23,4 @@ public class ScreenServiceImpl implements ScreenService {
         screenRepository.save(user);
         return new BaseResponse(HttpStatus.OK, "스크린타임 평균 저장 성공");
     }
-
-
 }
