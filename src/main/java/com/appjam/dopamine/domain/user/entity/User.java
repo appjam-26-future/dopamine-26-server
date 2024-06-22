@@ -34,6 +34,11 @@ public class User {
     @Column(nullable = false)
     private String name;
 
+    /*
+        자가진단 점수
+    */
+    private int testScore;
+
     public static User registerUser(
             String email,
             String password,
