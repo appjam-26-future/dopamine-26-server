@@ -11,4 +11,15 @@ public class BaseResponse {
     private String message;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Object data;
+
+    public BaseResponse(HttpStatus httpStatus, String message) {
+        this.httpStatus = httpStatus;
+        this.message = message;
+    }
+
+    public BaseResponse(HttpStatus httpStatus, String message, Object data) {
+        this.httpStatus = httpStatus;
+        this.message = message;
+        this.data = data;
+    }
 }
