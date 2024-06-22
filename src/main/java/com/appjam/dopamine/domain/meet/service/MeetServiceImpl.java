@@ -4,7 +4,6 @@ import com.appjam.dopamine.domain.meet.repository.MeetRepository;
 import com.appjam.dopamine.domain.user.entity.User;
 import com.appjam.dopamine.domain.user.repository.UserRepository;
 import com.appjam.dopamine.domain.user.request.dto.MeetDTO;
-import com.appjam.dopamine.domain.user.request.dto.ScreenDTO;
 import com.appjam.dopamine.global.common.BaseResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
