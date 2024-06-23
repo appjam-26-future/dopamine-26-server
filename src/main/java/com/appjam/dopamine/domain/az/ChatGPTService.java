@@ -39,7 +39,6 @@ public class ChatGPTService {
         ResponseEntity<String> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, String.class);
         responseBody = responseEntity.getBody();
 
-
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(responseBody);
         System.out.println(jsonNode);
@@ -63,13 +62,10 @@ public class ChatGPTService {
         ResponseEntity<String> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, String.class);
         responseBody = responseEntity.getBody();
 
-
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(responseBody);
         System.out.println(jsonNode);
         String textValue = jsonNode.get("choices").get(0).get("message").get("content").asText();
-
-
 
         return textValue;
     }
@@ -92,7 +88,7 @@ public class ChatGPTService {
                 "        {\n" +
                 "          \"type\": \"image_url\",\n" +
                 "          \"image_url\": {\n" +
-                "            \"url\": \"" + url+ "\"\n" +
+                "            \"url\": \"" + url + "\"\n" +
                 "          }\n" +
                 "        }\n" +
                 "      ]\n" +
